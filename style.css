@@ -1,0 +1,224 @@
+/* Estilo Generales */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 6.25%;
+}
+
+.newProduct,
+.venderProducto {
+	float: left;
+	width: 50%;
+}
+
+.listarProducto {
+	float: right;
+	width: 50%;
+}
+
+/* Section de agregar producto */
+.newProduct {
+	background-color: #f5f5f5;
+	border: 1rem solid #ccc;
+	border-radius: 5rem;
+	padding: 10rem 20rem;
+	margin-bottom: 10rem;
+}
+
+.newProduct h2 {
+	font-size: 20rem;
+	margin-bottom: 10rem;
+	text-align: center;
+}
+
+.newProduct label {
+	display: block;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: 11rem;
+}
+
+.newProduct input[type='text'],
+.newProduct input[type='number'] {
+	padding: 3rem;
+	border-radius: 3rem;
+	border: 1rem solid #ccc;
+	width: 100%;
+	margin-bottom: 5rem;
+}
+
+.newProduct button[type='submit'] {
+	background-color: black;
+	color: #fff;
+	padding: 5rem 90rem;
+	border-radius: 3rem;
+	border: none;
+	cursor: pointer;
+}
+.newProduct button {
+	display: block;
+	margin: 0 auto;
+}
+
+.newProduct button:hover {
+	background-color: gray;
+}
+
+/* Seccion Listado de producto */
+.listarProducto {
+	background-color: #f5f5f5;
+	margin-bottom: 28rem;
+	border: 1rem solid #ccc;
+	border-radius: 5rem;
+}
+
+.listarProducto h2 {
+	font-size: 20rem;
+	margin-bottom: 10rem;
+	text-align: center;
+	padding: 10rem;
+}
+
+.listarProducto button {
+	background-color: black;
+	color: #fff;
+	padding: 3rem 20rem;
+	border-radius: 3rem;
+	border: none;
+	cursor: pointer;
+	display: block;
+	margin: 0 auto;
+}
+.listarProducto button:hover {
+	background-color: gray;
+}
+
+.listarProducto p {
+	padding-bottom: 3rem;
+}
+
+.listarProducto .productList {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.5fr;
+	padding: 10rem;
+}
+
+.listarProducto .datos {
+	font-weight: bold;
+	font-size: 11rem;
+	column-count: 2;
+	padding: 5rem;
+	text-align: center;
+	column-rule: 1rem solid #c7c7c7;
+}
+
+.listarProducto .product-info {
+	max-width: 300rem;
+	max-height: 300rem;
+	border: 1rem solid #c7c7c7;
+}
+
+.listarProducto .foto {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	width: auto;
+	padding: 5rem;
+}
+
+/* Secion vender producto */
+
+.venderProducto {
+	background-color: #f5f5f5;
+	border: 1rem solid #ccc;
+	border-radius: 5rem;
+}
+
+.venderProducto h2 {
+	font-size: 20rem;
+	margin-bottom: 10rem;
+	text-align: center;
+	padding: 5rem;
+}
+
+.venderProducto form {
+	padding: 10rem;
+}
+
+.venderProducto input[type='text'],
+.venderProducto input[type='number'] {
+	padding: 3rem;
+	border-radius: 3rem;
+	border: 1rem solid #ccc;
+	width: 80%;
+	margin-bottom: 5rem;
+}
+
+.venderProducto button {
+	background-color: black;
+	color: #fff;
+	padding: 5rem 20rem;
+	border-radius: 3rem;
+	border: none;
+	cursor: pointer;
+	margin: 5rem;
+	/* display: block; */
+}
+.venderProducto button:hover {
+	background-color: gray;
+}
+
+.venderProducto label {
+	display: block;
+	margin-bottom: 1rem;
+	font-weight: bold;
+	font-size: 11rem;
+}
+
+.venderProducto p {
+	padding-bottom: 3rem;
+}
+
+.venderProducto .saleProducts {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-gap: 0.5fr;
+	padding: 10rem;
+}
+
+.venderProducto .datos {
+	font-weight: bold;
+	font-size: 11rem;
+	column-count: 2;
+	padding: 5rem;
+	text-align: center;
+	column-rule: 1rem solid #c7c7c7;
+}
+
+.venderProducto .product-info {
+	max-width: 300rem;
+	max-height: 300rem;
+	border: 1rem solid #c7c7c7;
+}
+
+.venderProducto .foto {
+	max-width: 100%;
+	max-height: 100%;
+	height: auto;
+	width: auto;
+	padding: 5rem;
+}
+
+@media only screen and (max-width: 700px) {
+	.newProduct,
+	.venderProducto,
+	.listarProducto {
+		float: none;
+		width: 100%;
+	}
+}
